@@ -18,13 +18,13 @@
                 <h3>Freetown, Sierra Leone</h3>
                 <p>Front-end developer and 3d Artist</p>
             </div>
-            <div class="l-cnt">
-                <button class="btns" type="submit"> <a href="https://github.com/ElktrumElk">Github</a></button>
-                <button class="btns" type="submit"><a href="https://www.frontendmentor.io/profile/ElktrumElk">Frontend Mentor</a></button>
-                <button class="btns" type="submit">Youtube</button>
-                <button class="btns" type="submit">Instagram</button>
-                <button class="btns" type="submit">Twitter</button>
-            </div>
+            <ul class="l-cnt">
+                <li class="btns" type="submit"><a href="https://github.com/ElktrumElk">Github</a></li>
+                <li class="btns"><a href="https://www.frontendmentor.io/profile/ElktrumElk">Frontend Mentor</a></li>
+                <li class="btns">Youtube</li>
+                <li class="btns">Instagram</li>
+                <li class="btns">Twitter</li>
+            </ul>
         </div>
     </main>
     <script >
@@ -37,7 +37,7 @@
         let f_clicked = false;
 
         btns.forEach((btn, id) => {
-            btn.id = 'btn"+id;
+            btn.id = id;
             btn.addEventListener('click', (e) => {
                 if (e.target.style.backgroundColor === "") {
                     e.target.style.backgroundColor = "hsl(75, 94%, 55%)";
@@ -60,6 +60,5 @@
        
     </script>
 </body>
-
 
 </html>
