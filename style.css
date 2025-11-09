@@ -1,0 +1,124 @@
+body {
+    background-color: hsl(0, 0%, 8%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100dvh;
+}
+
+.card {
+    width: 20vw;
+    padding: 2rem 2rem 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    align-items: center;
+    background-color: hsl(0, 0%, 12%);
+    border-radius: 20px;
+    max-height: 70vh;
+    
+   
+}
+
+.p-cnt {
+    display: flex;
+    width: 100%;
+    padding: 1rem 1rem 1rem 1rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+    min-height: 220px;
+    
+}
+
+.l-cnt {
+
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    flex: 1;
+    gap: 10px;
+    overflow-y: auto;
+
+}
+
+.l-cnt::-webkit-scrollbar {
+    display: none;
+}
+
+.btns {
+    width: 100%;
+    padding: 0.8rem .8rem .8rem .8rem;
+    background-color: hsl(0, 0%, 20%);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+.btns:hover {
+    background-color: hsl(75, 94%, 55%);
+    color: black;
+}
+
+.p-pic {
+
+    width: 100px;
+    height: 100px;
+    background-image: url('avatar.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 100%;
+    margin-block-start: 14px;
+
+}
+
+.p-cnt h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin: 0;
+}
+
+.p-cnt h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: hsl(75, 94%, 55%);
+    margin: 0;
+    font-size: small;
+    text-align: center;
+}
+
+.p-cnt p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(183, 183, 184);
+    margin: 0;
+    text-align: center;
+    margin-top: auto;
+}
+
+
+@media (max-width: 480px) {
+    .card {
+        width: 55vw;
+    }
+    .btns {
+        padding: .7rem .7rem .7rem .7rem;
+        font-size: 1.2rem;
+        flex: 1;
+
+    }
+}
+
+/*tab*/
+@media (max-width: 780px) {
+    .card {
+        width: 70vw;
+    }
+
+    .btns {
+        padding: 1rem 1rem 1rem 1rem;
+        font-size: 1.2rem;
+        flex: 1;
+
+    }
+}

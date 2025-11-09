@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social link</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div class="card">
+            <div class="p-cnt">
+               
+                <div class="p-pic"></div>
+                <h2>Elktrum Elk</h2>
+                <h3>Freetown, Sierra Leone</h3>
+                <p>Front-end developer and 3d Artist</p>
+            </div>
+            <div class="l-cnt">
+                <a href="https://github.com/ElktrumElk"><button class="btns">Github</button></a>
+                <a href="https://www.frontendmentor.io/profile/ElktrumElk"><button class="btns">Frontend Mentor</button></a>
+                <button class="btns">Youtube</button>
+                <button class="btns">Instagram</button>
+                <button class="btns">Twitter</button>
+            </div>
+        </div>
+    </main>
+    <script >
+
+        const btns = document.querySelectorAll(".btns");
+        const addBtn = document.querySelector(".add-btn");
+        const btnParent = document.querySelector(".l-cnt")
+        
+        let active = [];
+        let f_clicked = false;
+
+        btns.forEach((btn, id) => {
+            btn.id = id;
+            btn.addEventListener('click', (e) => {
+                if (e.target.style.backgroundColor === "") {
+                    e.target.style.backgroundColor = "hsl(75, 94%, 55%)";
+                    e.target.style.color = "black";
+                    
+                    if (!f_clicked){
+                        active = [e.target];
+                        f_clicked = true;
+                    }
+
+                    if (active[0] != e.target){
+
+                        active[0].style.backgroundColor = "";
+                        active[0].style.color = "";
+                        active = [e.target];
+                    }
+                }
+            });
+        });
+       
+    </script>
+</body>
+
+</html>
