@@ -56,6 +56,9 @@ body {
     border: none;
     border-radius: 10px;
 }
+.btns a {
+    color: white;
+}
 
 .btns:hover {
     background-color: hsl(75, 94%, 55%);
@@ -122,3 +125,4 @@ body {
 
     }
 }
+
