@@ -27,7 +27,7 @@ body {
     padding: 1rem 1rem 1rem 1rem;
     flex-direction: column;
     align-items: center;
-    gap: 7px;
+    gap: 1rem;
     min-height: 220px;
     
 }
@@ -38,7 +38,7 @@ body {
     width: 100%;
     flex-direction: column;
     flex: 1;
-    gap: 10px;
+    gap: .8rem;
     overflow-y: auto;
 
 }
@@ -99,7 +99,7 @@ body {
 
 @media (max-width: 480px) {
     .card {
-        width: 55vw;
+        width: 55dvw;
     }
     .btns {
         padding: .7rem .7rem .7rem .7rem;
@@ -112,11 +112,11 @@ body {
 /*tab*/
 @media (max-width: 780px) {
     .card {
-        width: 70vw;
+        width: 70dvw;
     }
 
     .btns {
-        padding: 1rem 1rem 1rem 1rem;
+        padding: clamp(1rem 1rem 1rem 1rem);
         font-size: 1.2rem;
         flex: 1;
 
