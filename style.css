@@ -58,6 +58,7 @@ body {
 }
 .btns a {
     color: white;
+    text-underline: none;
 }
 
 .btns:hover {
@@ -125,4 +126,5 @@ body {
 
     }
 }
+
 
