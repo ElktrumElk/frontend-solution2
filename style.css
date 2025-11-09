@@ -21,7 +21,7 @@ body {
     height: 100dvh;
 }
 .card {
-    width: clamp(15vw, 26vw, 30vw);
+    width: clamp(15vw, 22vw, 30vw);
     padding: 2rem 2rem 2rem 2rem;
     height: auto;
     display: flex;
@@ -132,7 +132,6 @@ body {
 
     }
 }
-
 
 /*tab*/
 @media (max-width: 780px) {
