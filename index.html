@@ -10,34 +10,35 @@
 
 <body>
     <main>
-        <div class="card">
-            <div class="p-cnt">
-               
-                <div class="p-pic"></div>
-                <h1>Elktrum Elk</h1>
-                <h2>Freetown, Sierra Leone</h2>
-                <p>Front-end developer and 3d Artist</p>
-            </div>
-            <ul class="l-cnt">
+        <article class="card">
+
+            <header class="p_cnt">
+                <div class="p_pic"></div>
+                <h1 class="card_name">Elktrum Elk</h1>
+                <h2 class="card_address">Freetown, Sierra Leone</h2>
+                <p class="card_bio">Front-end developer and 3d Artist</p>
+            </header>
+
+            <ul class="l_cnt">
                 <li class="btns"><a href="https://github.com/ElktrumElk">Github</a></li>
                 <li class="btns"><a href="https://www.frontendmentor.io/profile/ElktrumElk">Frontend Mentor</a></li>
                 <li class="btns">Youtube</li>
                 <li class="btns">Instagram</li>
                 <li class="btns">Twitter</li>
             </ul>
-        </div>
+        </article>
     </main>
     <script >
 
         const btns = document.querySelectorAll(".btns");
-        const addBtn = document.querySelector(".add-btn");
-        const btnParent = document.querySelector(".l-cnt")
+        const addBtn = document.querySelector(".add_btn");
+        const btnParent = document.querySelector(".l_cnt")
         
         let active = [];
         let f_clicked = false;
 
         btns.forEach((btn, id) => {
-            btn.id = "btn"+id;
+            btn.id = "btns"+id;
             btn.addEventListener('click', (e) => {
                 if (e.target.style.backgroundColor === "") {
                     e.target.style.backgroundColor = "hsl(75, 94%, 55%)";
@@ -62,8 +63,3 @@
 </body>
 
 </html>
-
-
-
-
-
